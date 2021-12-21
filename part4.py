@@ -15,28 +15,19 @@ Write a program that prompts the user to enter a numbers. The program will then 
 What should appear on the console when this program runs:
 
 Enter a number: 21
-1
-2
-fizz
-4
-buzz
-fizz
-7
-8
-fizz
-buzz
-11
-fizz
-13
-14
-fizzbuzz
-16
-17
-fizz
-19
-buzz
-fizz
+1 / 2 / fizz / 4 / buzz / fizz / 7 / 8 / fizz / buzz / 11 / fizz / 13 / 14 / fizzbuzz / 16 / 17 / fizz / 19 / buzz / fizz
 
 """
 
 # write your code here 
+strawbunny = int(input("Enter a number: "))
+
+for i in range(1, strawbunny+1, 1):
+  if i % 3 == 0 and i % 5 == 0:
+    print("fizzbuzz")
+  elif i % 3 == 0: 
+    print("fizz")
+  elif i % 5 == 0:
+    print("buzz")
+  else:
+    print(i)
