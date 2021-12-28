@@ -17,5 +17,11 @@ Enter the height: 3
 *******
 
 """
+#write your code here
 
-#write your code here 
+batt = int(input("Enter the base: "))
+hob = int(input("Enter the height: "))
+
+for i in range(1, hob+1):
+  bye = "*" * batt
+  print(bye)
